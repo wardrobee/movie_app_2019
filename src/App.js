@@ -5,8 +5,7 @@ const foodILike = [
     id: 1,
     name: "Kimchi",
     image:
-      "https://www.wearesovegan.com/wp-content/uploads/2020/09/howtomakevegankimchirecipe-h3.jpg",
-    rating: 5
+      "https://www.wearesovegan.com/wp-content/uploads/2020/09/howtomakevegankimchirecipe-h3.jpg"
   },
   {
     id: 2,
@@ -45,10 +44,11 @@ function Food({ name, picture, rating }) {
   );
 }
 
+// has to be named propTypes
 Food.propTypes = {
   name: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired
+  rating: PropTypes.number // can be undefined or number
 };
 
 function App() {
