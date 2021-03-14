@@ -19,6 +19,17 @@ class App extends React.Component {
     this.setState(current => ({ count: current.count - 1 }));
   };
 
+  componentDidMount() {
+    console.log("componentDidMount called");
+  }
+
+  componentDidUpdate() {
+    console.log("componentDidUpdate called");
+  }
+
+  componentWillUnmount() {
+    console.log("componentWillUnmount called");
+  }
   render() {
     console.log("render called");
     return (
