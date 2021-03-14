@@ -1,18 +1,3 @@
-function Food({ name, picture }) {
-  return (
-    <div>
-      <h2>
-        I like {name}
-      </h2>
-      <img src={picture} alt="food" />
-    </div>
-  );
-}
-
-function renderFood(dish) {
-  return <Food name={dish.name} picture={dish.image} key={dish.id} />;
-}
-
 const foodILike = [
   {
     id: 1,
@@ -40,10 +25,23 @@ const foodILike = [
   }
 ];
 
+function Food({ name, picture }) {
+  return (
+    <div>
+      <h2>
+        I like {name}
+      </h2>
+      <img src={picture} alt={name} />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div>
-      {foodILike.map(renderFood)}
+      {foodILike.map(dish =>
+        <Food key={dish.id} name={dish.name} picture={dish.image} />
+      )}
     </div>
   );
 }
