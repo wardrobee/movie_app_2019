@@ -9,6 +9,10 @@ function Food({ name, picture }) {
   );
 }
 
+function renderFood(dish) {
+  return <Food name={dish.name} picture={dish.image} key={dish.id} />;
+}
+
 const foodILike = [
   {
     id: 1,
@@ -39,9 +43,7 @@ const foodILike = [
 function App() {
   return (
     <div>
-      {foodILike.map((dish, id) =>
-        <Food name={dish.name} picture={dish.image} key={id} />
-      )}
+      {foodILike.map(renderFood)}
     </div>
   );
 }
