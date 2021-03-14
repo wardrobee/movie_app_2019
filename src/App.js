@@ -3,25 +3,29 @@ const foodILike = [
     id: 1,
     name: "Kimchi",
     image:
-      "https://www.wearesovegan.com/wp-content/uploads/2020/09/howtomakevegankimchirecipe-h3.jpg"
+      "https://www.wearesovegan.com/wp-content/uploads/2020/09/howtomakevegankimchirecipe-h3.jpg",
+    rating: 5
   },
   {
     id: 2,
     name: "Chicken",
     image:
-      "https://cdn.cms.prod.nypr.digital/images/8f417ad16chicken_main-jpg.2e16d0ba.fill-661x496.jpg"
+      "https://cdn.cms.prod.nypr.digital/images/8f417ad16chicken_main-jpg.2e16d0ba.fill-661x496.jpg",
+    rating: 20
   },
   {
     id: 3,
     name: "Ramen",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/1200px-Shoyu_Ramen.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/1200px-Shoyu_Ramen.jpg",
+    rating: 10
   },
   {
     id: 4,
     name: "Chips",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/81vJyb43URL._SL1500_.jpg"
+      "https://images-na.ssl-images-amazon.com/images/I/81vJyb43URL._SL1500_.jpg",
+    rating: 4
   }
 ];
 
