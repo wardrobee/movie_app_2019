@@ -4,7 +4,7 @@ function Food({ name, picture }) {
       <h2>
         I like {name}
       </h2>
-      <img src={picture} />
+      <img src={picture} alt="food" />
     </div>
   );
 }
