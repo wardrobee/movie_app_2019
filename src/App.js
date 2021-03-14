@@ -12,9 +12,14 @@ class App extends React.Component {
     movies: []
   };
 
+  // async bc function might take time, so might need to wait
+  // can't use await without async
+  getMovies = async () => {
+    const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
+  };
+
   componentDidMount() {
-    // fetch data using axios
-    const movies = axios.get("https://yts-proxy.now.sh/list_movies.json");
+    this.getMovies();
   }
 
   render() {
