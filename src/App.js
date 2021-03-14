@@ -16,6 +16,7 @@ class App extends React.Component {
   // can't use await without async
   getMovies = async () => {
     const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
+    console.log(movies.data.data.movies);
   };
 
   componentDidMount() {
