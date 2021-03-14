@@ -1,8 +1,12 @@
-import PropTypes from "prop-types";
 import React from "react";
 
 // class component
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log("constructor called");
+  }
+
   // state object, put data of ur component inside state, data that will change
   state = {
     count: 0
@@ -16,6 +20,7 @@ class App extends React.Component {
   };
 
   render() {
+    console.log("render called");
     return (
       <div>
         <h1>
