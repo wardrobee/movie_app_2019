@@ -3,18 +3,18 @@
 // Nomad Coders ReactJS로 영화 웹 서비스 만들기
 
 import React from "react";
+import axios from "axios";
 
 // class component
 class App extends React.Component {
   state = {
-    isLoading: true
+    isLoading: true,
+    movies: []
   };
 
   componentDidMount() {
-    // Js thing not React thing
-    setTimeout(() => {
-      this.setState({ isLoading: false });
-    }, 5000);
+    // fetch data using axios
+    const movies = axios.get("https://yts-proxy.now.sh/list_movies.json");
   }
 
   render() {
