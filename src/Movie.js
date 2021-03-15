@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Movie.css";
 
 // if component doesn't need state,
 // we can just use function component instead of class component
@@ -9,7 +10,7 @@ function Movie({ year, title, summary, poster }) {
     <div className="movie">
       <img src={poster} alt={title} title={title} />
       <div className="movie__data">
-        <h3 className="movie__title">
+        <h3 className="movie__title" style={{ backgroundColor: "red" }}>
           {title}
         </h3>
         <h5 className="movie__year">
