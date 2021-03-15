@@ -1,3 +1,7 @@
 .movie {
-  background-color: blue;
+  background-color: lightcyan;
+}
+
+#movie__title {
+  font-style: italic;
 }

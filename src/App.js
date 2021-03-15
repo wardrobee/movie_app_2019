@@ -28,6 +28,7 @@ class App extends React.Component {
   }
 
   render() {
+    // es6 Destructuring_assignment
     const { isLoading, movies } = this.state;
     return (
       <section className="container">
@@ -45,6 +46,7 @@ class App extends React.Component {
                     title={movie.title}
                     summary={movie.summary}
                     poster={movie.medium_cover_image}
+                    genres={movie.genres}
                   />
                 );
               })}
