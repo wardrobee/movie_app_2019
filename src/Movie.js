@@ -4,11 +4,22 @@ import PropTypes from "prop-types";
 // if component doesn't need state,
 // we can just use function component instead of class component
 
-function Movie({ id, year, title, summary, poster }) {
+function Movie({ year, title, summary, poster }) {
   return (
-    <h4>
-      {title}
-    </h4>
+    <div className="movie">
+      <img src={poster} alt={title} title={title} />
+      <div className="movie__data">
+        <h3 className="movie__title">
+          {title}
+        </h3>
+        <h5 className="movie__year">
+          {year}
+        </h5>
+        <p className="movie__summary">
+          {summary}
+        </p>
+      </div>
+    </div>
   );
 }
 
