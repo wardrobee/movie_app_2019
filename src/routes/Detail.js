@@ -1,5 +1,5 @@
-function Detail(props) {
-  console.log(props);
+function Detail({ location }) {
+  console.log(location);
   return <span>details!!!</span>;
 }
 
