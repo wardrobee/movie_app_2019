@@ -10,14 +10,14 @@ function Movie({ year, title, summary, poster, genres }) {
     <div className="movie">
       <img src={poster} alt={title} title={title} />
       <div className="movie__data">
-        <h3 id="movie__title" style={{ backgroundColor: "red" }}>
+        <h3 id="movie__title" style={{ backgroundColor: "cyan" }}>
           {title}
         </h3>
         <h5 className="movie__year">
           {year}
         </h5>
         <p className="movie__summary">
-          {summary}
+          {summary.slice(0, 140)}...
         </p>
         <ul className="genres">
           {genres.map((genre, index) =>
