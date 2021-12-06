@@ -14,6 +14,7 @@ function App() {
     <>
     <h1>hello</h1>
     <HashRouter>
+      {/* needs to be inside HashRouter if u wanna use Link */}
       <Navigation />
       <Route path="/" exact={true} component={Home} />
       <Route path="/about" component={About} />
